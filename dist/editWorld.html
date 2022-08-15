@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <div id="head"></div>
+    <title>Buildaverse | Blank Page</title>
+  </head>
+
+  <body>
+    <!-- NAVIGATION START -->
+    <div id="navbar"></div>
+    <div id="nav-top"></div>
+    <div id="nav-side"></div>
+    <div id="nav-mobile"></div>
+
+    <!-- BEGIN CONTENT -->
+    <div class="main-section container pb-5">
+      <div class="d-flex justify-content-center mb-4 mt-5 mt-md-0">
+        <div>
+          <img class="rounded img-fluid" src="img/ads/leaderboard.png" /><br />
+          <span class="text-muted small my-0">Advertisement</span>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-11">
+          <h4>Edit World "c0ncrete's Baseplate"</h4>
+          <div class="card card-body">
+            <div class="row gy-4">
+              <div class="col-md-7">
+                <div class="text-xs fw-bold text-muted text-uppercase mb-1">
+                  WORLD THUMBNAIL
+                </div>
+                <img src="img/games/game2.png" class="img-fluid rounded mb-3" />
+                <div class="text-xs fw-bold text-muted text-uppercase mb-1">
+                  UPDATE THUMBNAIL
+                </div>
+                <input class="form-control" type="file" id="formFile" />
+              </div>
+              <div class="col-md-5">
+                <div class="text-xs fw-bold text-muted text-uppercase mb-1">
+                  WORLD TITLE
+                </div>
+                <input
+                  type="text"
+                  class="form-control mb-2"
+                  placeholder="World Title..."
+                  value="c0ncrete's Baseplate"
+                />
+                <div class="text-xs fw-bold text-muted text-uppercase mb-1">
+                  WORLD DESCRIPTION
+                </div>
+                <textarea
+                  rows="4"
+                  class="form-control"
+                  placeholder="World Description..."
+                >
+This is the default Buildaverse baseplate!
+                </textarea>
+                <br />
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="text-xl fw-semibold">Active</div>
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="activeSwitch"
+                    />
+                  </div>
+                </div>
+                <hr />
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="text-xl fw-semibold">Copylocked</div>
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="copylockedSwitch"
+                      checked
+                    />
+                  </div>
+                </div>
+                <hr />
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="text-xl fw-semibold">Comments</div>
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="commentSwitch"
+                      checked
+                    />
+                  </div>
+                </div>
+                <div class="text-end mt-4">
+                  <button class="btn btn-primary px-4 mb-2 mb-md-0">
+                    <i class="bi bi-gear text-lg lh-1 align-middle me-2"></i
+                    >Open in Workshop
+                  </button>
+                  <button class="btn px-4 btn-success">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END CONTENT -->
+
+    <!-- JS imports -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/custom.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Section Loaders-->
+    <script>
+      window.onload = function () {
+        $.get("!head.html", function (content) {
+          $("#head").html(content);
+        });
+        $.get("!nav.html", function (content) {
+          $("#navbar").html(content);
+        });
+        $.get("!nav-side.html", function (content) {
+          $("#nav-side").html(content);
+        });
+        $.get("!nav-mobile.html", function (content) {
+          $("#nav-mobile").html(content);
+        });
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="128px" height="128px" viewBox="0 0 128 128">
+<defs>
+<g id="Layer0_0_FILL">
+<path fill="#000000" stroke="none" d="
+M 48.15 34.6
+Q 45.75 34.6 44 37.35 42.25 40.15 42.25 44.05 42.25 47.95 44 50.75 45.75 53.5 48.15 53.5 50.55 53.5 52.25 50.75 54 47.95 54 44.05 54 40.15 52.25 37.35 50.55 34.6 48.15 34.6
+M 85.75 44.05
+Q 85.75 40.15 83.95 37.35 82.25 34.6 79.85 34.6 77.45 34.6 75.7 37.35 74 40.15 74 44.05 74 47.95 75.7 50.75 77.45 53.5 79.85 53.5 82.25 53.5 83.95 50.75 85.75 47.95 85.75 44.05 Z"/>
+</g>
+
+<path id="Layer1_0_1_STROKES" stroke="#000000" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M 44.15 3.6
+L 83.9 3.6
+Q 98 3.6 107.95 13.25 118 22.9 118 36.55
+L 118 91.4
+Q 118 105.1 107.95 114.75 98 124.4 83.9 124.4
+L 44.15 124.4
+Q 30 124.4 20.05 114.75 10.05 105.1 10.05 91.4
+L 10.05 36.55
+Q 10.05 22.9 20.05 13.25 30 3.6 44.15 3.6 Z"/>
+
+<path id="Layer0_0_1_STROKES" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M 85.75 44.05
+Q 85.75 47.95 83.95 50.75 82.25 53.5 79.85 53.5 77.45 53.5 75.7 50.75 74 47.95 74 44.05 74 40.15 75.7 37.35 77.45 34.6 79.85 34.6 82.25 34.6 83.95 37.35 85.75 40.15 85.75 44.05 Z
+M 54 44.05
+Q 54 47.95 52.25 50.75 50.55 53.5 48.15 53.5 45.75 53.5 44 50.75 42.25 47.95 42.25 44.05 42.25 40.15 44 37.35 45.75 34.6 48.15 34.6 50.55 34.6 52.25 37.35 54 40.15 54 44.05 Z"/>
+
+<path id="Layer0_0_2_STROKES" stroke="#000000" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M 86.95 79.4
+Q 85.2 82.45 82.65 85.15 74.95 93.4 64.1 93.4 53.2 93.4 45.25 85.15 42.75 82.45 41.1 79.4"/>
+</defs>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Layer1_0_1_STROKES"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Layer0_0_FILL"/>
+
+<use xlink:href="#Layer0_0_1_STROKES"/>
+
+<use xlink:href="#Layer0_0_2_STROKES"/>
+</g>
+</svg>

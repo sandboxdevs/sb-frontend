@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <div id="head"></div>
+    <title>Buildaverse | Blank Page</title>
+  </head>
+
+  <body>
+    <!-- NAVIGATION START -->
+    <div id="navbar"></div>
+    <div id="nav-top"></div>
+    <div id="nav-side"></div>
+    <div id="nav-mobile"></div>
+
+    <!-- BEGIN CONTENT -->
+    <div class="main-section container pb-5">
+      <div class="d-flex justify-content-center mb-4 mt-5 mt-md-0">
+        <div>
+          <img class="rounded img-fluid" src="img/ads/leaderboard.png" /><br />
+          <span class="text-muted small my-0">Advertisement</span>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="text-2xl fw-semibold mb-1">All Notifications (78)</div>
+          <div class="card p-3">
+            <a href="#" class="d-block section">
+              <div class="d-flex align-items-center gap-3">
+                <img
+                  src="img/avatar/headshot.png"
+                  class="headshot rounded-circle img-fluid"
+                  width="70"
+                />
+                <div>
+                  <div class="text-xs fw-bold text-uppercase text-muted mb-1">
+                    NEW MESSAGE
+                  </div>
+                  <div class="text-xl fw-semibold text-light">
+                    <span class="text-muted">Kyle</span> replied to your message
+                  </div>
+                  <div class="text-muted fw-normal text-sm">5 minutes ago</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="d-block section">
+              <div class="d-flex align-items-center gap-3">
+                <img
+                  src="img/icons/award.png"
+                  class="notif-icon-primary rounded-circle"
+                  width="70"
+                />
+                <div>
+                  <div class="text-xs fw-bold text-uppercase text-muted mb-1">
+                    NEW ACHIEVEMENT
+                  </div>
+                  <div class="text-xl fw-semibold text-light">
+                    You have recieved the
+                    <span class="text-muted">stupidity achievement</span>
+                  </div>
+                  <div class="text-muted fw-normal text-sm">5 minutes ago</div>
+                </div>
+              </div>
+            </a>
+            <div class="section mx-auto">
+              <button class="btn btn-danger">Erase All</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END CONTENT -->
+
+    <!-- JS imports -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/custom.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Section Loaders-->
+    <script>
+      window.onload = function () {
+        $.get("!head.html", function (content) {
+          $("#head").html(content);
+        });
+        $.get("!nav.html", function (content) {
+          $("#navbar").html(content);
+        });
+        $.get("!nav-side.html", function (content) {
+          $("#nav-side").html(content);
+        });
+        $.get("!nav-mobile.html", function (content) {
+          $("#nav-mobile").html(content);
+        });
+      };
+    </script>
+  </body>
+</html>

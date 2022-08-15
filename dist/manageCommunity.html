@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <div id="head"></div>
+    <title>Buildaverse | Blank Page</title>
+  </head>
+
+  <body>
+    <!-- NAVIGATION START -->
+    <div id="navbar"></div>
+    <div id="nav-top"></div>
+    <div id="nav-side"></div>
+    <div id="nav-mobile"></div>
+
+    <!-- BEGIN CONTENT -->
+    <div class="main-section container pb-5">
+      <div class="d-flex justify-content-center mb-4 mt-5 mt-md-0">
+        <div>
+          <img class="rounded img-fluid" src="img/ads/leaderboard.png" /><br />
+          <span class="text-muted small my-0">Advertisement</span>
+        </div>
+      </div>
+      <div class="card p-3 px-4 mb-3 text-center text-md-start">
+        <div class="d-md-flex justify-content-between align-items-center">
+          <div class="mb-3 mb-md-0">
+            <div class="text-3xl fw-semibold">Manage "Sid's Evil Lair"</div>
+            <div class="text-muted">
+              Creator: <a href="#" class="fw-semibold">Sid</a>
+            </div>
+          </div>
+          <div class="text-center">
+            <div class="text-bold">
+              <span class="text-success text-xl me-2">
+                <i class="bi bi-cash-stack text-2xl me-1 align-middle"></i> 10k+
+              </span>
+              <span class="text-warning text-xl">
+                <i class="bi bi-coin text-2xl me-1 align-middle"></i> 110k+
+              </span>
+            </div>
+            <div class="text-muted">VAULT</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div
+            class="nav flex-column nav-pills mb-3 mb-md-0"
+            id="v-pills-tab"
+            role="tablist"
+            aria-orientation="vertical"
+          >
+            <button
+              class="nav-link active"
+              id="info-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#information"
+              type="button"
+              role="tab"
+              aria-controls="info"
+              aria-selected="true"
+            >
+              Information
+            </button>
+            <button
+              class="nav-link"
+              id="settings-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#settings"
+              type="button"
+              role="tab"
+              aria-controls="settings"
+              aria-selected="true"
+            >
+              Settings
+            </button>
+            <button
+              class="nav-link"
+              id="worlds-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#worlds"
+              type="button"
+              role="tab"
+              aria-controls="worlds"
+              aria-selected="true"
+            >
+              Worlds
+            </button>
+            <button
+              class="nav-link"
+              id="vault-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#vault"
+              type="button"
+              role="tab"
+              aria-controls="vault"
+              aria-selected="true"
+            >
+              Vault
+            </button>
+            <button
+              class="nav-link"
+              id="roles-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#roles"
+              type="button"
+              role="tab"
+              aria-controls="role"
+              aria-selected="true"
+            >
+              Roles
+            </button>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div
+              class="tab-pane show active"
+              id="information"
+              role="tabpanel"
+              aria-labelledby="info-tab"
+              tabindex="0"
+            >
+              <h4>Community Information</h4>
+              <div class="card card-body mb-3">
+                <div class="row gy-4">
+                  <div class="col-lg-5">
+                    <div
+                      class="text-xs text-center mb-2 fw-bold text-muted mb-1"
+                    >
+                      COMMUNITY LOGO
+                    </div>
+                    <div
+                      class="community-logo-manage bg-secondary rounded-circle p-3 mx-auto"
+                    >
+                      <img src="img/branding/dark_icon.svg" class="img-fluid" />
+                    </div>
+                    <div class="text-xs mb-1 mt-4 fw-bold text-muted mb-1">
+                      UPDATE LOGO
+                    </div>
+                    <input class="form-control" type="file" id="formFile" />
+                  </div>
+                  <div class="col-lg-7">
+                    <div class="text-xs fw-bold text-muted mb-1">
+                      COMMUNITY NAME
+                    </div>
+                    <div class="text-3xl fw-semibold mb-3">Sid's Evil Lair</div>
+                    <div class="text-xs fw-bold text-muted mb-1">
+                      COMMUNITY DESCRIPTION
+                    </div>
+                    <textarea rows="8" class="form-control">
+we love sid please marry us sid my dearest owo love u man owo uwu</textarea
+                    >
+                  </div>
+                  <div class="text-end">
+                    <button class="btn btn-success">Save</button>
+                  </div>
+                </div>
+              </div>
+              <h4>Community Ownership</h4>
+              <div class="card card-body">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="min-w-0">
+                    <div class="text-xs fw-bold text-muted mb-1">
+                      CURRENT OWNER
+                    </div>
+                    <div class="text-3xl fw-semibold">Sid</div>
+                  </div>
+                  <button
+                    class="px-3 btn btn-danger truncate"
+                    data-bs-toggle="modal"
+                    data-bs-target="#ownershipModal"
+                  >
+                    Change Ownership
+                  </button>
+                  <div
+                    class="modal fade"
+                    id="ownershipModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header border-bottom-0 pb-0">
+                          <h4 class="modal-title" id="exampleModalLabel">
+                            Change Ownership
+                          </h4>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="text-xs fw-bold text-muted mb-1">
+                            NEW OWNER'S USERNAME
+                          </div>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Username (Must be in community)"
+                          />
+                          <div class="text-xs fw-bold text-danger mt-1">
+                            * This action cannot be undone
+                          </div>
+                        </div>
+                        <div class="modal-footer border-top-0 pt-0">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Cancel
+                          </button>
+                          <button type="button" class="btn btn-danger">
+                            Change Ownership
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane"
+              id="settings"
+              role="tabpanel"
+              aria-labelledby="settings-tab"
+              tabindex="0"
+            >
+              <h4>Settings</h4>
+              <div class="card card-body">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="text-xl fw-semibold">
+                    Private
+                    <span class="text-muted text-xs"
+                      >(Users must be accepted manually into community)</span
+                    >
+                  </div>
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="privateSwitch"
+                    />
+                  </div>
+                </div>
+                <hr />
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="text-xl fw-semibold">
+                    Show community funds on the community page
+                  </div>
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="fundsSwitch"
+                      checked
+                    />
+                  </div>
+                </div>
+                <hr />
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="text-xl fw-semibold">
+                    Show community games on the community page
+                  </div>
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="gamesSwitch"
+                      checked
+                    />
+                  </div>
+                </div>
+                <hr />
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="text-xl fw-semibold">
+                    Allow affiliate requests
+                  </div>
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="affiliateSwitch"
+                      checked
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane"
+              id="worlds"
+              role="tabpanel"
+              aria-labelledby="worlds-tab"
+              tabindex="0"
+            >
+              <div class="d-flex justify-content-between align-items-end mb-2">
+                <h4 class="p-0 m-0">Worlds</h4>
+                <a href="#" class="btn btn-success px-3">Create World</a>
+              </div>
+              <div class="row gy-4">
+                <div class="col-md-4 col-6">
+                  <div class="card overflow-hidden">
+                    <span
+                      class="position-absolute end-0 top-0 m-2 text-xs py-1 user-select-none pointer-events-none fw-semibold bg-primary text-white shadow-sm px-2 rounded"
+                      >10 Currently Playing</span
+                    >
+                    <img src="img/games/Thumbnail 2.png" class="img-fluid" />
+                    <div class="p-2">
+                      <div class="d-flex gap-2 align-items-center">
+                        <img
+                          src="img/avatar/headshot.png"
+                          class="img-fluid rounded-circle headshot"
+                          width="50"
+                        />
+                        <div>
+                          <a
+                            href="#"
+                            class="text-light fw-semibold text-lg lh-1"
+                            >Hell Obby</a
+                          >
+                          <div class="text-muted truncate text-sm lh-1">
+                            By: <a href="#" class="fw-semibold">c0ncrete</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-6">
+                  <div class="card overflow-hidden">
+                    <span
+                      class="position-absolute end-0 top-0 m-2 text-xs py-1 user-select-none pointer-events-none fw-semibold bg-primary text-white shadow-sm px-2 rounded"
+                      >10 Currently Playing</span
+                    >
+                    <img src="img/games/Thumbnail 2.png" class="img-fluid" />
+                    <div class="p-2">
+                      <div class="d-flex gap-2 align-items-center">
+                        <img
+                          src="img/avatar/headshot.png"
+                          class="img-fluid rounded-circle headshot"
+                          width="50"
+                        />
+                        <div>
+                          <a
+                            href="#"
+                            class="text-light fw-semibold text-lg lh-1"
+                            >Hell Obby</a
+                          >
+                          <div class="text-muted truncate text-sm lh-1">
+                            By: <a href="#" class="fw-semibold">c0ncrete</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-6">
+                  <div class="card overflow-hidden">
+                    <span
+                      class="position-absolute end-0 top-0 m-2 text-xs py-1 user-select-none pointer-events-none fw-semibold bg-primary text-white shadow-sm px-2 rounded"
+                      >10 Currently Playing</span
+                    >
+                    <img src="img/games/Thumbnail 2.png" class="img-fluid" />
+                    <div class="p-2">
+                      <div class="d-flex gap-2 align-items-center">
+                        <img
+                          src="img/avatar/headshot.png"
+                          class="img-fluid rounded-circle headshot"
+                          width="50"
+                        />
+                        <div>
+                          <a
+                            href="#"
+                            class="text-light fw-semibold text-lg lh-1"
+                            >Hell Obby</a
+                          >
+                          <div class="text-muted truncate text-sm lh-1">
+                            By: <a href="#" class="fw-semibold">c0ncrete</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-6">
+                  <div class="card overflow-hidden">
+                    <span
+                      class="position-absolute end-0 top-0 m-2 text-xs py-1 user-select-none pointer-events-none fw-semibold bg-primary text-white shadow-sm px-2 rounded"
+                      >10 Currently Playing</span
+                    >
+                    <img src="img/games/Thumbnail 2.png" class="img-fluid" />
+                    <div class="p-2">
+                      <div class="d-flex gap-2 align-items-center">
+                        <img
+                          src="img/avatar/headshot.png"
+                          class="img-fluid rounded-circle headshot"
+                          width="50"
+                        />
+                        <div>
+                          <a
+                            href="#"
+                            class="text-light fw-semibold text-lg lh-1"
+                            >Hell Obby</a
+                          >
+                          <div class="text-muted truncate text-sm lh-1">
+                            By: <a href="#" class="fw-semibold">c0ncrete</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-6">
+                  <div class="card overflow-hidden">
+                    <span
+                      class="position-absolute end-0 top-0 m-2 text-xs py-1 user-select-none pointer-events-none fw-semibold bg-primary text-white shadow-sm px-2 rounded"
+                      >10 Currently Playing</span
+                    >
+                    <img src="img/games/Thumbnail 2.png" class="img-fluid" />
+                    <div class="p-2">
+                      <div class="d-flex gap-2 align-items-center">
+                        <img
+                          src="img/avatar/headshot.png"
+                          class="img-fluid rounded-circle headshot"
+                          width="50"
+                        />
+                        <div>
+                          <a
+                            href="#"
+                            class="text-light fw-semibold text-lg lh-1"
+                            >Hell Obby</a
+                          >
+                          <div class="text-muted truncate text-sm lh-1">
+                            By: <a href="#" class="fw-semibold">c0ncrete</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-6">
+                  <div class="card overflow-hidden">
+                    <span
+                      class="position-absolute end-0 top-0 m-2 text-xs py-1 user-select-none pointer-events-none fw-semibold bg-primary text-white shadow-sm px-2 rounded"
+                      >10 Currently Playing</span
+                    >
+                    <img src="img/games/Thumbnail 2.png" class="img-fluid" />
+                    <div class="p-2">
+                      <div class="d-flex gap-2 align-items-center">
+                        <img
+                          src="img/avatar/headshot.png"
+                          class="img-fluid rounded-circle headshot"
+                          width="50"
+                        />
+                        <div>
+                          <a
+                            href="#"
+                            class="text-light fw-semibold text-lg lh-1"
+                            >Hell Obby</a
+                          >
+                          <div class="text-muted truncate text-sm lh-1">
+                            By: <a href="#" class="fw-semibold">c0ncrete</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane"
+              id="members"
+              role="tabpanel"
+              aria-labelledby="members-tab"
+              tabindex="0"
+            >
+              <h4>Members</h4>
+              <div class="card p-3">
+                <div class="row">
+                  <div class="col-md-8">
+                    <input
+                      type="text"
+                      class="form-control mb-2 mb-md-0"
+                      placeholder="Search for members..."
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <select class="form-control">
+                      <option value="1">Members</option>
+                      <option value="2">Administrator</option>
+                      <option value="3">Owner</option>
+                    </select>
+                  </div>
+                </div>
+                <br />
+                <div class="row">
+                  <div class="col-3 text-center mb-3">
+                    <a href="#">
+                      <img src="img/avatar/human.png" class="img-fluid mb-1" />
+                    </a>
+                    <a href="#" class="d-block truncate fw-semibold"
+                      >c0ncrete</a
+                    >
+                    <select class="form-control my-1">
+                      <option value="1">Members</option>
+                      <option value="2">Administrator</option>
+                      <option value="3">Owner</option>
+                    </select>
+                  </div>
+                  <div class="col-3 text-center mb-3">
+                    <a href="#">
+                      <img src="img/avatar/human.png" class="img-fluid mb-1" />
+                    </a>
+                    <a href="#" class="d-block truncate fw-semibold"
+                      >c0ncrete</a
+                    >
+                    <select class="form-control my-1">
+                      <option value="1">Members</option>
+                      <option value="2">Administrator</option>
+                      <option value="3">Owner</option>
+                    </select>
+                  </div>
+                  <div class="col-3 text-center mb-3">
+                    <a href="#">
+                      <img src="img/avatar/human.png" class="img-fluid mb-1" />
+                    </a>
+                    <a href="#" class="d-block truncate fw-semibold"
+                      >c0ncrete</a
+                    >
+                    <select class="form-control my-1">
+                      <option value="1">Members</option>
+                      <option value="2">Administrator</option>
+                      <option value="3">Owner</option>
+                    </select>
+                  </div>
+                  <div class="col-3 text-center mb-3">
+                    <a href="#">
+                      <img src="img/avatar/human.png" class="img-fluid mb-1" />
+                    </a>
+                    <a href="#" class="d-block truncate fw-semibold"
+                      >c0ncrete</a
+                    >
+                    <select class="form-control my-1">
+                      <option value="1">Members</option>
+                      <option value="2">Administrator</option>
+                      <option value="3">Owner</option>
+                    </select>
+                  </div>
+                  <div class="col-3 text-center mb-3">
+                    <a href="#">
+                      <img src="img/avatar/human.png" class="img-fluid mb-1" />
+                    </a>
+                    <a href="#" class="d-block truncate fw-semibold"
+                      >c0ncrete</a
+                    >
+                    <select class="form-control my-1">
+                      <option value="1">Members</option>
+                      <option value="2">Administrator</option>
+                      <option value="3">Owner</option>
+                    </select>
+                  </div>
+                  <div class="col-3 text-center mb-3">
+                    <a href="#">
+                      <img src="img/avatar/human.png" class="img-fluid mb-1" />
+                    </a>
+                    <a href="#" class="d-block truncate fw-semibold"
+                      >c0ncrete</a
+                    >
+                    <select class="form-control my-1">
+                      <option value="1">Members</option>
+                      <option value="2">Administrator</option>
+                      <option value="3">Owner</option>
+                    </select>
+                  </div>
+                  <div class="col-3 text-center mb-3">
+                    <a href="#">
+                      <img src="img/avatar/human.png" class="img-fluid mb-1" />
+                    </a>
+                    <a href="#" class="d-block truncate fw-semibold"
+                      >c0ncrete</a
+                    >
+                    <select class="form-control my-1">
+                      <option value="1">Members</option>
+                      <option value="2">Administrator</option>
+                      <option value="3">Owner</option>
+                    </select>
+                  </div>
+                  <div class="col-3 text-center mb-3">
+                    <a href="#">
+                      <img src="img/avatar/human.png" class="img-fluid mb-1" />
+                    </a>
+                    <a href="#" class="d-block truncate fw-semibold"
+                      >c0ncrete</a
+                    >
+                    <select class="form-control my-1">
+                      <option value="1">Members</option>
+                      <option value="2">Administrator</option>
+                      <option value="3">Owner</option>
+                    </select>
+                  </div>
+                  <div class="col-3 text-center mb-3">
+                    <a href="#">
+                      <img src="img/avatar/human.png" class="img-fluid mb-1" />
+                    </a>
+                    <a href="#" class="d-block truncate fw-semibold"
+                      >c0ncrete</a
+                    >
+                    <select class="form-control my-1">
+                      <option value="1">Members</option>
+                      <option value="2">Administrator</option>
+                      <option value="3">Owner</option>
+                    </select>
+                  </div>
+                  <div class="col-3 text-center mb-3">
+                    <a href="#">
+                      <img src="img/avatar/human.png" class="img-fluid mb-1" />
+                    </a>
+                    <a href="#" class="d-block truncate fw-semibold"
+                      >c0ncrete</a
+                    >
+                    <select class="form-control my-1">
+                      <option value="1">Members</option>
+                      <option value="2">Administrator</option>
+                      <option value="3">Owner</option>
+                    </select>
+                  </div>
+                  <div class="col-3 text-center mb-3">
+                    <a href="#">
+                      <img src="img/avatar/human.png" class="img-fluid mb-1" />
+                    </a>
+                    <a href="#" class="d-block truncate fw-semibold"
+                      >c0ncrete</a
+                    >
+                    <select class="form-control my-1">
+                      <option value="1">Members</option>
+                      <option value="2">Administrator</option>
+                      <option value="3">Owner</option>
+                    </select>
+                  </div>
+                  <div class="col-3 text-center mb-3">
+                    <a href="#">
+                      <img src="img/avatar/human.png" class="img-fluid mb-1" />
+                    </a>
+                    <a href="#" class="d-block truncate fw-semibold"
+                      >c0ncrete</a
+                    >
+                    <select class="form-control my-1">
+                      <option value="1">Members</option>
+                      <option value="2">Administrator</option>
+                      <option value="3">Owner</option>
+                    </select>
+                  </div>
+                </div>
+                <nav class="mt-2">
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li class="page-item active">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="mt-2 text-end">
+                  <button class="btn btn-success">Save</button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane"
+              id="vault"
+              role="tabpanel"
+              aria-labelledby="vault-tab"
+              tabindex="0"
+            >
+              <div class="d-flex justify-content-between align-items-end mb-2">
+                <h4 class="p-0 m-0">Vault</h4>
+                <button
+                  class="btn btn-success px-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#vaultModal"
+                >
+                  Payout Currency
+                </button>
+                <div
+                  class="modal fade"
+                  id="vaultModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header border-bottom-0 pb-0">
+                        <h4 class="modal-title" id="exampleModalLabel">
+                          Payout Currency
+                        </h4>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="text-muted text-xs fw-bold mb-1">
+                          RECIPIENT'S USERNAME
+                        </div>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Username (Must be in community)"
+                        />
+                        <div class="text-muted text-xs fw-bold mt-2">
+                          CURRENCY
+                        </div>
+                        <div class="d-flex gap-2 py-1">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="payInCash"
+                              id="payInCash"
+                              checked
+                            />
+                            <label class="form-check-label" for="payInCash">
+                              Cash
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="payInCoins"
+                              id="payInCoins"
+                            />
+                            <label class="form-check-label" for="payInCoins">
+                              Coins
+                            </label>
+                          </div>
+                        </div>
+                        <div class="input-parent has-icon">
+                          <i class="text-success bi bi-cash-stack"></i>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Cash"
+                          />
+                        </div>
+                      </div>
+                      <div class="modal-footer border-top-0 pt-0">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Cancel
+                        </button>
+                        <button type="button" class="btn btn-success">
+                          Payout
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card p-3 px-4 mb-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="fw-semibold">Total Revenue</div>
+                  <div>
+                    <span class="text-success me-2">
+                      <i class="bi bi-cash-stack text-lg align-middle"></i>
+                      10,000
+                    </span>
+                    <span class="text-warning">
+                      <i class="bi bi-coin text-lg align-middle"></i> 110,210
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <h4>Transactions</h4>
+              <div class="card card-body mb-3">
+                <div class="section">
+                  <div class="row gy-3">
+                    <div class="col-md-3">
+                      <div class="text-xs fw-bold text-muted mb-1">DONOR</div>
+                      <a
+                        href="#"
+                        class="text-xl fw-semibold text-light d-block truncate"
+                        >SidStan123</a
+                      >
+                    </div>
+                    <div class="col-md-3">
+                      <div class="text-xs fw-bold text-muted mb-1">
+                        RECIPIENT
+                      </div>
+                      <a
+                        href="#"
+                        class="text-xl fw-semibold text-light d-block truncate"
+                        >Sid</a
+                      >
+                    </div>
+                    <div class="col-md-3">
+                      <div class="text-xs fw-bold text-muted mb-1">AMOUNT</div>
+                      <div class="text-xl fw-semibold">
+                        <span class="text-success me-2">
+                          <i class="bi bi-cash-stack text-lg align-middle"></i>
+                          10,000
+                        </span>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="text-xs fw-bold text-muted mb-1">DATE</div>
+                      <div class="text-xl fw-semibold text-light">8h ago</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="section">
+                  <div class="row gy-3">
+                    <div class="col-md-3">
+                      <div class="text-xs fw-bold text-muted mb-1">DONOR</div>
+                      <a
+                        href="#"
+                        class="text-xl fw-semibold text-light d-block truncate"
+                        >SidStan123</a
+                      >
+                    </div>
+                    <div class="col-md-3">
+                      <div class="text-xs fw-bold text-muted mb-1">
+                        RECIPIENT
+                      </div>
+                      <a
+                        href="#"
+                        class="text-xl fw-semibold text-light d-block truncate"
+                        >Sid</a
+                      >
+                    </div>
+                    <div class="col-md-3">
+                      <div class="text-xs fw-bold text-muted mb-1">AMOUNT</div>
+                      <div class="text-xl fw-semibold">
+                        <span class="text-warning me-2">
+                          <i class="bi bi-coin text-lg align-middle"></i>
+                          10,000
+                        </span>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="text-xs fw-bold text-muted mb-1">DATE</div>
+                      <div class="text-xl fw-semibold text-light">8h ago</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="section">
+                  <div class="row gy-3">
+                    <div class="col-md-3">
+                      <div class="text-xs fw-bold text-muted mb-1">DONOR</div>
+                      <a
+                        href="#"
+                        class="text-xl fw-semibold text-light d-block truncate"
+                        >SidStan123</a
+                      >
+                    </div>
+                    <div class="col-md-3">
+                      <div class="text-xs fw-bold text-muted mb-1">
+                        RECIPIENT
+                      </div>
+                      <a
+                        href="#"
+                        class="text-xl fw-semibold text-light d-block truncate"
+                        >Sid</a
+                      >
+                    </div>
+                    <div class="col-md-3">
+                      <div class="text-xs fw-bold text-muted mb-1">AMOUNT</div>
+                      <div class="text-xl fw-semibold">
+                        <span class="text-success me-2">
+                          <i class="bi bi-cash-stack text-lg align-middle"></i>
+                          10,000
+                        </span>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="text-xs fw-bold text-muted mb-1">DATE</div>
+                      <div class="text-xl fw-semibold text-light">8h ago</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h4>Sales</h4>
+              <div class="card card-body">
+                <div class="section">
+                  <div class="row align-items-center">
+                    <div class="col-4 col-md-2">
+                      <img src="img/avatar/blocky.png" class="img-fluid" />
+                    </div>
+                    <div class="col-8 col-md-10">
+                      <a href="#" class="min-w-0">
+                        <div class="text-xl fw-bold text-light">
+                          Kyle Fan Shirt
+                        </div>
+                        <div class="text-muted truncate fw-normal pb-1">
+                          wear this shirt if u truly love kyle irl and ingame
+                          and wish to have millions of children with him owo
+                        </div>
+                        <span
+                          class="d-block d-md-inline text-success fw-semibold me-2"
+                        >
+                          <i
+                            class="bi bi-cash-stack text-md me-1 align-middle"
+                          ></i
+                          >10,000
+                        </span>
+                        <span
+                          class="d-block d-md-inline text-warning fw-semibold me-2"
+                        >
+                          <i class="bi bi-coin text-md me-1 align-middle"></i
+                          >10,000
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="section">
+                  <div class="row align-items-center">
+                    <div class="col-4 col-md-2">
+                      <img src="img/avatar/blocky.png" class="img-fluid" />
+                    </div>
+                    <div class="col-8 col-md-10">
+                      <a href="#" class="min-w-0">
+                        <div class="text-xl fw-bold text-light">
+                          Kyle Fan Shirt
+                        </div>
+                        <div class="text-muted truncate fw-normal pb-1">
+                          wear this shirt if u truly love kyle irl and ingame
+                          and wish to have millions of children with him owo
+                        </div>
+                        <span
+                          class="d-block d-md-inline text-success fw-semibold me-2"
+                        >
+                          <i
+                            class="bi bi-cash-stack text-md me-1 align-middle"
+                          ></i
+                          >10,000
+                        </span>
+                        <span
+                          class="d-block d-md-inline text-warning fw-semibold me-2"
+                        >
+                          <i class="bi bi-coin text-md me-1 align-middle"></i
+                          >10,000
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="section">
+                  <div class="row align-items-center">
+                    <div class="col-4 col-md-2">
+                      <img src="img/avatar/blocky.png" class="img-fluid" />
+                    </div>
+                    <div class="col-8 col-md-10">
+                      <a href="#" class="min-w-0">
+                        <div class="text-xl fw-bold text-light">
+                          Kyle Fan Shirt
+                        </div>
+                        <div class="text-muted truncate fw-normal pb-1">
+                          wear this shirt if u truly love kyle irl and ingame
+                          and wish to have millions of children with him owo
+                        </div>
+                        <span
+                          class="d-block d-md-inline text-success fw-semibold me-2"
+                        >
+                          <i
+                            class="bi bi-cash-stack text-md me-1 align-middle"
+                          ></i
+                          >10,000
+                        </span>
+                        <span
+                          class="d-block d-md-inline text-warning fw-semibold me-2"
+                        >
+                          <i class="bi bi-coin text-md me-1 align-middle"></i
+                          >10,000
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane"
+              id="roles"
+              role="tabpanel"
+              aria-labelledby="vault-tab"
+              tabindex="0"
+            >
+              <div class="d-flex align-items-end justify-content-between mb-2">
+                <h4 class="p-0 m-0">Roles</h4>
+                <button
+                  class="btn btn-success px-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="vaultModal"
+                >
+                  Create Role
+                </button>
+              </div>
+              <div class="card card-body">
+                <div class="section">
+                  <div class="row gy-2 align-items-center">
+                    <div class="col-md-3">
+                      <div class="text-xs fw-bold text-muted mb-1">
+                        ROLE NAME
+                      </div>
+                      <div class="text-xl fw-semibold text-light truncate">
+                        sid lover
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="text-xs fw-bold text-muted mb-1">
+                        PRIORITY (MAX 256)
+                      </div>
+                      <div class="text-xl fw-semibold text-light truncate">
+                        180
+                      </div>
+                    </div>
+                    <div class="col-md-6 text-end">
+                      <a
+                        href="#"
+                        class="btn btn-primary d-block d-md-inline-block text-center text-md-start"
+                        >Edit Role</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="section">
+                  <div class="row gy-2 align-items-center">
+                    <div class="col-md-3">
+                      <div class="text-xs fw-bold text-muted mb-1">
+                        ROLE NAME
+                      </div>
+                      <div class="text-xl fw-semibold text-light truncate">
+                        sid lover
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="text-xs fw-bold text-muted mb-1">
+                        PRIORITY (MAX 256)
+                      </div>
+                      <div class="text-xl fw-semibold text-light truncate">
+                        180
+                      </div>
+                    </div>
+                    <div class="col-md-6 text-end">
+                      <a
+                        href="#"
+                        class="btn btn-primary d-block d-md-inline-block text-center text-md-start"
+                        >Edit Role</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="section">
+                  <div class="row gy-2 align-items-center">
+                    <div class="col-md-3">
+                      <div class="text-xs fw-bold text-muted mb-1">
+                        ROLE NAME
+                      </div>
+                      <div class="text-xl fw-semibold text-light truncate">
+                        sid lover
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="text-xs fw-bold text-muted mb-1">
+                        PRIORITY (MAX 256)
+                      </div>
+                      <div class="text-xl fw-semibold text-light truncate">
+                        180
+                      </div>
+                    </div>
+                    <div class="col-md-6 text-end">
+                      <a
+                        href="#"
+                        class="btn btn-primary d-block d-md-inline-block text-center text-md-start"
+                        >Edit Role</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END CONTENT -->
+
+    <!-- JS imports -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/custom.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Section Loaders-->
+    <script>
+      window.onload = function () {
+        $.get("!head.html", function (content) {
+          $("#head").html(content);
+        });
+        $.get("!nav.html", function (content) {
+          $("#navbar").html(content);
+        });
+        $.get("!nav-side.html", function (content) {
+          $("#nav-side").html(content);
+        });
+        $.get("!nav-mobile.html", function (content) {
+          $("#nav-mobile").html(content);
+        });
+      };
+    </script>
+  </body>
+</html>

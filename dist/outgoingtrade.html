@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<div id="head"></div>
+	<title>Buildaverse | Incoming Trade</title>
+</head>
+
+<body>
+	<!-- NAVIGATION START -->
+	<div id="navbar"></div>
+	<div id="nav-top"></div>
+	<div id="nav-side"></div>
+	<div id="nav-mobile"></div>
+
+	<!-- BEGIN CONTENT -->
+	<div class="main-section container pb-5 pb-md-0">
+		<div class="d-none d-flex justify-content-center">
+			<div>
+				<img class="rounded" src="img/ads/leaderboard.png"><br>
+				<span class="text-muted small my-0" >Advertisement</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<h1>Trading</h1>
+				<div class="d-flex align-items-center p-3 my-3 text-white bg-dark rounded shadow-sm">
+					<img class="me-1 rounded" src="img/avatar/headshot.png" alt="" width="48" height="48">
+					<i class="bi bi-arrow-left-right"></i>
+					<img class="me-3 ms-1 rounded" src="img/avatar/headshot.png" alt="" width="48" height="48">
+					<div class="lh-1">
+						<h1 class="h6 mb-0 text-white lh-1">Outgoing Trade</h1>
+						<small>to <a href="#">username</a></small>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<div class="card">
+					<div class="card-body">
+						<div class="row">
+							<div class="col-md-6 trade-divider">
+								<h5>You offered</h5>
+								<div class="row">
+									<div class="col-6 col-md-6 col-lg-4 col-xxl-3">
+										<a href="#"><img class="img-thumbnail border" src="img/market/place-1.png" data-bs-toggle="tooltip" data-bs-placement="top" title="Item name"></a>
+										<p class="mb-0 mx-2 img-thumbnail border bg-gray-500 text-center py-0" style="position: relative; bottom: 16px;"><i class="bi-cash-stack text-success"></i> 10,000</p>
+									</div>
+									<div class="col-6 col-md-6 col-lg-4 col-xxl-3">
+										<a href="#"><img class="img-thumbnail border" src="img/market/place-2.png" data-bs-toggle="tooltip" data-bs-placement="top" title="Item name"></a>
+										<p class="mb-0 mx-2 img-thumbnail border bg-gray-500 text-center py-0" style="position: relative; bottom: 16px;"><i class="bi-cash-stack text-success"></i> 10,000</p>
+									</div>
+									<div class="col-6 col-md-6 col-lg-4 col-xxl-3">
+										<a href="#"><img class="img-thumbnail border" src="img/market/place-1.png" data-bs-toggle="tooltip" data-bs-placement="top" title="Item name"></a>
+										<p class="mb-0 mx-2 img-thumbnail border bg-gray-500 text-center py-0" style="position: relative; bottom: 16px;"><i class="bi-cash-stack text-success"></i> 10,000</p>
+									</div>
+									<div class="col-6 col-md-6 col-lg-4 col-xxl-3">
+										<a href="#"><img class="img-thumbnail border" src="img/market/place-2.png" data-bs-toggle="tooltip" data-bs-placement="top" title="Item name"></a>
+										<p class="mb-0 mx-2 img-thumbnail border bg-gray-500 text-center py-0" style="position: relative; bottom: 16px;"><i class="bi-cash-stack text-success"></i> 10,000</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<h5>for</h5>
+								<div class="row">
+									<div class="col-6 col-md-6 col-lg-4 col-xxl-3">
+										<a href="#"><img class="img-thumbnail border" src="img/market/place-1.png" data-bs-toggle="tooltip" data-bs-placement="top" title="Item name"></a>
+										<p class="mb-0 mx-2 img-thumbnail border bg-gray-500 text-center py-0" style="position: relative; bottom: 16px;"><i class="bi-cash-stack text-success"></i> 10,000</p>
+									</div>
+									<div class="col-6 col-md-6 col-lg-4 col-xxl-3">
+										<a href="#"><img class="img-thumbnail border" src="img/market/place-2.png" data-bs-toggle="tooltip" data-bs-placement="top" title="Item name"></a>
+										<p class="mb-0 mx-2 img-thumbnail border bg-gray-500 text-center py-0" style="position: relative; bottom: 16px;"><i class="bi-cash-stack text-success"></i> 10,000</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row mt-3">
+							<div class="col-md-6">
+								<p>Total Value: <b class="text-success">40,000</b></p>
+							</div>
+							<div class="col-md-6">
+								<p>Total Value: <b class="text-success">20,000</b></p>
+							</div>
+						</div>
+						<div class="row mt-3">
+							<div class="col-12 ">
+								<h4>This trade has been <span class="text-success">completed.</span></h4>
+								<h4>This trade is <span class="text-muted">pending.</span></h4>
+								<h4>This trade has been <span class="text-danger">declined.</span></h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END CONTENT -->
+
+	<!-- JS imports -->
+	<script src="js/bootstrap.bundle.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+		crossorigin="anonymous"></script>
+
+	<!-- Section Loaders-->
+	<script>
+		window.onload = function () {
+			$.get("!head.html", function (content) {
+				$("#head").html(content);
+			});
+			$.get("!nav.html", function (content) {
+				$("#navbar").html(content);
+			});
+			$.get("!nav-side.html", function (content) {
+				$("#nav-side").html(content);
+			});
+			$.get("!nav-mobile.html", function (content) {
+				$("#nav-mobile").html(content);
+			});
+		};
+	</script>
+</body>
+
+</html>

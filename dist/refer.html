@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <div id="head"></div>
+    <title>Buildaverse | Blank Page</title>
+  </head>
+
+  <body>
+    <!-- NAVIGATION START -->
+    <div id="navbar"></div>
+    <div id="nav-top"></div>
+    <div id="nav-side"></div>
+    <div id="nav-mobile"></div>
+
+    <!-- BEGIN CONTENT -->
+    <div class="main-section container pb-5">
+      <div class="d-flex justify-content-center mb-4 mt-5 mt-md-0">
+        <div>
+          <img class="rounded img-fluid" src="img/ads/leaderboard.png" /><br />
+          <span class="text-muted small my-0">Advertisement</span>
+        </div>
+      </div>
+      <div class="row justify-content-center position-relative">
+        <div class="col-md-10">
+          <h2>Referrals</h2>
+          <img
+            src="img/avatar/WaveSticker.png"
+            class="position-absolute end-0 top-0 d-none d-md-block"
+            style="margin-top: -70px"
+            width="280"
+          />
+          <div class="card p-3 mb-3">
+            <div class="text-lg fw-semibold">
+              Share the love. Invite your friends and earn money!
+            </div>
+            <div class="text-muted lh-1">
+              Invite new members to Buildaverse and earn up to 25% of what they
+              in-game spend using real-life transactions!
+            </div>
+            <hr />
+            <div class="text-muted text-xs fw-bold mb-1">MY REFERRAL LINK</div>
+            <code
+              class="bg-secondary d-inline text-info px-1"
+              style="width: min-content"
+              >https://www.buildaverse.com/eatshit</code
+            >
+          </div>
+          <h2>Referred Users</h2>
+          <div class="card p-3">
+            <div class="section">
+              <div class="d-md-flex align-items-center justify-content-between">
+                <a href="#" class="d-flex align-items-center gap-3">
+                  <img
+                    src="img/avatar/headshot.png"
+                    width="80"
+                    class="rounded-circle headshot"
+                  />
+                  <div class="text-xl text-light fw-semibold">Jordan</div>
+                </a>
+                <a
+                  href="#"
+                  class="btn btn-primary d-block d-md-inline-block mt-2 mt-md-0"
+                  >View Profile</a
+                >
+              </div>
+            </div>
+            <div class="section">
+              <div class="d-md-flex align-items-center justify-content-between">
+                <a href="#" class="d-flex align-items-center gap-3">
+                  <img
+                    src="img/avatar/headshot.png"
+                    width="80"
+                    class="rounded-circle headshot"
+                  />
+                  <div class="text-xl text-light fw-semibold">Jordan</div>
+                </a>
+                <a
+                  href="#"
+                  class="btn btn-primary d-block d-md-inline-block mt-2 mt-md-0"
+                  >View Profile</a
+                >
+              </div>
+            </div>
+            <div class="section">
+              <div class="d-md-flex align-items-center justify-content-between">
+                <a href="#" class="d-flex align-items-center gap-3">
+                  <img
+                    src="img/avatar/headshot.png"
+                    width="80"
+                    class="rounded-circle headshot"
+                  />
+                  <div class="text-xl text-light fw-semibold">Jordan</div>
+                </a>
+                <a
+                  href="#"
+                  class="btn btn-primary d-block d-md-inline-block mt-2 mt-md-0"
+                  >View Profile</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END CONTENT -->
+
+    <!-- JS imports -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/custom.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Section Loaders-->
+    <script>
+      window.onload = function () {
+        $.get("!head.html", function (content) {
+          $("#head").html(content);
+        });
+        $.get("!nav.html", function (content) {
+          $("#navbar").html(content);
+        });
+        $.get("!nav-side.html", function (content) {
+          $("#nav-side").html(content);
+        });
+        $.get("!nav-mobile.html", function (content) {
+          $("#nav-mobile").html(content);
+        });
+      };
+    </script>
+  </body>
+</html>

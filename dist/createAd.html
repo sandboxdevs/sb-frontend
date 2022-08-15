@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <div id="head"></div>
+    <title>Buildaverse | Blank Page</title>
+  </head>
+
+  <body>
+    <!-- NAVIGATION START -->
+    <div id="navbar"></div>
+    <div id="nav-top"></div>
+    <div id="nav-side"></div>
+    <div id="nav-mobile"></div>
+
+    <!-- BEGIN CONTENT -->
+    <div class="main-section container pb-5">
+      <div class="d-flex justify-content-center mb-4 mt-5 mt-md-0">
+        <div>
+          <img class="rounded img-fluid" src="img/ads/leaderboard.png" /><br />
+          <span class="text-muted small my-0">Advertisement</span>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-7">
+          <h4>Advertise "Kyle Fan Shirt"</h4>
+          <div class="card card-body">
+            <img src="img/ads/leaderboard.png" class="img-fluid rounded mb-1" />
+            <div class="text-sm text-muted mb-2">
+              Your ad will look like this
+              <span class="text-xs mx-1">&bullet;</span>
+              <a href="#" class="text-muted fw-normal">Download Template</a>
+            </div>
+            <div class="input-parent has-icon">
+              <i class="text-success bi bi-cash-stack"></i>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Bid in Cash"
+              />
+            </div>
+            <div class="my-2">
+              <input class="form-control" type="file" id="formFile" />
+            </div>
+            <button type="submit" class="btn btn-success">Upload</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END CONTENT -->
+
+    <!-- JS imports -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/custom.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Section Loaders-->
+    <script>
+      window.onload = function () {
+        $.get("!head.html", function (content) {
+          $("#head").html(content);
+        });
+        $.get("!nav.html", function (content) {
+          $("#navbar").html(content);
+        });
+        $.get("!nav-side.html", function (content) {
+          $("#nav-side").html(content);
+        });
+        $.get("!nav-mobile.html", function (content) {
+          $("#nav-mobile").html(content);
+        });
+      };
+    </script>
+  </body>
+</html>

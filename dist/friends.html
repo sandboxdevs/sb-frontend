@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <div id="head"></div>
+    <title>Buildaverse | Blank Page</title>
+  </head>
+
+  <body>
+    <!-- NAVIGATION START -->
+    <div id="navbar"></div>
+    <div id="nav-top"></div>
+    <div id="nav-side"></div>
+    <div id="nav-mobile"></div>
+
+    <!-- BEGIN CONTENT -->
+    <div class="main-section container pb-5">
+      <div class="d-flex justify-content-center mb-4 mt-5 mt-md-0">
+        <div>
+          <img class="rounded img-fluid" src="img/ads/leaderboard.png" /><br />
+          <span class="text-muted small my-0">Advertisement</span>
+        </div>
+      </div>
+      <div class="text-3xl fw-semibold mb-2">Friends (678)</div>
+      <div class="card p-3 mb-2">
+        <ul class="nav nav-pills nav-justified" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="friends"
+              data-bs-toggle="pill"
+              data-bs-target="#friends-tab"
+              type="button"
+              role="tab"
+              aria-controls="friends"
+              aria-selected="true"
+            >
+              My Friends
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="incomingFriends"
+              data-bs-toggle="pill"
+              data-bs-target="#incoming-tab"
+              type="button"
+              role="tab"
+              aria-controls="incoming"
+              aria-selected="false"
+            >
+              Incoming Requests
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="input-parent has-icon mb-2">
+        <i class="bi bi-search"></i>
+        <input
+          type="text"
+          class="form-control mb-4"
+          placeholder="Search friends..."
+        />
+      </div>
+      <div class="row gy-3">
+        <div class="col-md-6 col-lg-4">
+          <div class="card p-3">
+            <div class="d-flex align-items-center">
+              <img
+                src="img/avatar/headshot.png"
+                class="headshot rounded-circle me-3"
+                width="80"
+              />
+              <div class="w-100 min-w-0">
+                <a
+                  href="#"
+                  class="truncate d-block text-xl fw-semibold text-light"
+                  >c0ncrete</a
+                >
+                <button class="btn btn-success btn-sm w-100 mt-1">
+                  Add Friend
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card p-3">
+            <div class="d-flex align-items-center">
+              <img
+                src="img/avatar/headshot.png"
+                class="headshot rounded-circle me-3"
+                width="80"
+              />
+              <div class="w-100 min-w-0">
+                <a
+                  href="#"
+                  class="truncate d-block text-xl fw-semibold text-light"
+                  >c0ncrete</a
+                >
+                <button class="btn btn-secondary btn-sm w-100 mt-1" disabled>
+                  Request Pending
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card p-3">
+            <div class="d-flex align-items-center">
+              <img
+                src="img/avatar/headshot.png"
+                class="headshot rounded-circle me-3"
+                width="80"
+              />
+              <div class="min-w-0">
+                <a
+                  href="#"
+                  class="d-block truncate text-xl fw-semibold text-light"
+                  >c0ncreteowoowowowowowoowowowo</a
+                >
+                <div class="d-flex gap-2 mt-1">
+                  <button class="btn btn-success btn-sm w-100">Accept</button>
+                  <button class="btn btn-danger btn-sm w-100">Decline</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card p-3">
+            <div class="d-flex align-items-center">
+              <img
+                src="img/avatar/headshot.png"
+                class="headshot rounded-circle me-3"
+                width="80"
+              />
+              <div class="w-100 min-w-0">
+                <a
+                  href="#"
+                  class="d-block truncate text-xl fw-semibold text-light"
+                  >c0ncrete</a
+                >
+                <div class="text-xs text-muted fw-semibold mb-2">
+                  Friends since 12/04/2022
+                </div>
+                <button class="btn btn-danger btn-sm w-100">Unfriend</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END CONTENT -->
+
+    <!-- JS imports -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/custom.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Section Loaders-->
+    <script>
+      window.onload = function () {
+        $.get("!head.html", function (content) {
+          $("#head").html(content);
+        });
+        $.get("!nav.html", function (content) {
+          $("#navbar").html(content);
+        });
+        $.get("!nav-side.html", function (content) {
+          $("#nav-side").html(content);
+        });
+        $.get("!nav-mobile.html", function (content) {
+          $("#nav-mobile").html(content);
+        });
+      };
+    </script>
+  </body>
+</html>

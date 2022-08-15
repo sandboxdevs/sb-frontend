@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <div id="head"></div>
+    <title>Buildaverse | Blank Page</title>
+  </head>
+
+  <body>
+    <!-- NAVIGATION START -->
+    <div id="navbar"></div>
+    <div id="nav-top"></div>
+    <div id="nav-side"></div>
+    <div id="nav-mobile"></div>
+
+    <!-- BEGIN CONTENT -->
+    <div class="main-section container pb-5">
+      <div class="d-flex justify-content-center mb-4 mt-5 mt-md-0">
+        <div>
+          <img class="rounded img-fluid" src="img/ads/leaderboard.png" /><br />
+          <span class="text-muted small my-0">Advertisement</span>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <h4>
+            <a
+              href="#"
+              class="text-sm align-middle text-muted me-2"
+              data-bs-toggle="tooltip"
+              title="Go back"
+              ><i class="bi bi-chevron-double-left fw-bold"></i></a
+            >Edit "Kyle Fan Shirt"
+          </h4>
+          <div class="card card-body">
+            <label class="text-sm text-muted fw-bold">SHIRT NAME:</label>
+            <input
+              type="text"
+              class="form-control mb-2"
+              placeholder="Yellow Blazer"
+              value="Kyle Fan Shirt"
+            />
+            <label class="text-sm text-muted fw-bold">SHIRT DESCRIPTION:</label>
+            <textarea
+              class="form-control mb-3"
+              rows="6"
+              placeholder="Now in yellow!"
+            >
+wear this shirt if u truly love kyle irl and ingame and wish to have millions of children with him owo</textarea
+            >
+            <div class="text-muted text-sm fw-bold">PRICE</div>
+            <div class="d-flex gap-3 mb-1">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="freePantsCheck"
+                />
+                <label class="form-check-label" for="freePantsCheck">
+                  Free
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="offsalePantsCheck"
+                />
+                <label class="form-check-label" for="offsalePantsCheck">
+                  Offsale
+                </label>
+              </div>
+            </div>
+            <div class="d-flex gap-2">
+              <div class="input-parent has-icon">
+                <i class="text-success bi bi-cash-stack"></i>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Price in Cash"
+                />
+              </div>
+              <div class="input-parent has-icon">
+                <i class="text-warning bi bi-coin"></i>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Price in Coins"
+                />
+              </div>
+            </div>
+            <div class="my-2">
+              <input class="form-control" type="file" id="formFile" />
+            </div>
+            <button type="submit" class="btn btn-success">Upload</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END CONTENT -->
+
+    <!-- JS imports -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/custom.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Section Loaders-->
+    <script>
+      window.onload = function () {
+        $.get("!head.html", function (content) {
+          $("#head").html(content);
+        });
+        $.get("!nav.html", function (content) {
+          $("#navbar").html(content);
+        });
+        $.get("!nav-side.html", function (content) {
+          $("#nav-side").html(content);
+        });
+        $.get("!nav-mobile.html", function (content) {
+          $("#nav-mobile").html(content);
+        });
+      };
+    </script>
+  </body>
+</html>

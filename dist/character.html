@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <div id="head"></div>
+    <title>Buildaverse | Blank Page</title>
+  </head>
+
+  <body>
+    <!-- NAVIGATION START -->
+    <div id="navbar"></div>
+    <div id="nav-top"></div>
+    <div id="nav-side"></div>
+    <div id="nav-mobile"></div>
+
+    <!-- BEGIN CONTENT -->
+    <div class="main-section container pb-5">
+      <div class="d-flex justify-content-center mb-4 mt-5 mt-md-0">
+        <div>
+          <img class="rounded img-fluid" src="img/ads/leaderboard.png" /><br />
+          <span class="text-muted small my-0">Advertisement</span>
+        </div>
+      </div>
+      <div class="row gy-4">
+        <div class="col-md-4">
+          <h4>My Character</h4>
+          <div class="card card-body position-relative mb-3">
+            <img src="img/avatar/blocky.png" class="img-fluid" />
+            <button
+              class="position-absolute bottom-0 end-0 bg-transparent border-0 text-light m-2"
+              data-bs-toggle="modal"
+              data-bs-target="#advancedModal"
+              title="Colors & Body Types"
+            >
+              <i class="bi bi-palette text-2xl"></i>
+            </button>
+            <div
+              class="modal fade"
+              id="advancedModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header border-bottom-0 pb-0">
+                    <h4 class="modal-title" id="exampleModalLabel">
+                      Colors & Body Types
+                    </h4>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row gy-4">
+                      <div class="col-md-5">
+                        <div class="text-xl fw-semibold mb-2">Body</div>
+                        <div class="d-flex flex-column mb-2">
+                          <button
+                            class="d-block head-part mx-auto mb-1"
+                            style="background-color: #ffffff"
+                          ></button>
+                          <div class="d-flex justify-content-center">
+                            <button
+                              class="d-block limb-part"
+                              style="background-color: #ffffff"
+                            ></button>
+                            <button
+                              class="d-block torso-part mx-1 mb-1"
+                              style="background-color: #695af1"
+                            ></button>
+                            <button
+                              class="d-block limb-part"
+                              style="background-color: #ffffff"
+                            ></button>
+                          </div>
+                          <div class="d-flex justify-content-center">
+                            <button
+                              class="d-block limb-part me-1"
+                              style="background-color: #ffffff"
+                            ></button>
+                            <button
+                              class="d-block limb-part"
+                              style="background-color: #ffffff"
+                            ></button>
+                          </div>
+                        </div>
+                        <div class="text-xl fw-semibold mb-2">Type</div>
+                        <div class="d-flex gap-2">
+                          <button
+                            class="btn btn-sm btn-secondary active fw-normal w-100 text-center py-2"
+                          >
+                            Classic
+                          </button>
+                          <button
+                            class="btn btn-sm btn-secondary fw-normal w-100 text-center py-2"
+                          >
+                            Humanoid
+                          </button>
+                        </div>
+                      </div>
+                      <div class="col-md-7 text-center text-md-start">
+                        <div class="text-xl fw-semibold mb-2 text-start">
+                          Colors
+                        </div>
+                        <button
+                          class="color-part rounded-circle me-1 mb-2"
+                          style="background-color: #695af1"
+                        ></button>
+                        <button
+                          class="color-part rounded-circle me-1 mb-2"
+                          style="background-color: #ffffff"
+                        ></button>
+                        <button
+                          class="color-part rounded-circle me-1 mb-2"
+                          style="background-color: #45ac25"
+                        ></button>
+                        <button
+                          class="color-part rounded-circle me-1 mb-2"
+                          style="background-color: #c53232"
+                        ></button>
+                        <button
+                          class="color-part rounded-circle me-1 mb-2"
+                          style="background-color: #e6399e"
+                        ></button>
+                        <button
+                          class="color-part rounded-circle me-1 mb-2"
+                          style="background-color: #2f6ad8"
+                        ></button>
+                        <button
+                          class="color-part rounded-circle me-1 mb-2"
+                          style="background-color: #4ea0d6"
+                        ></button>
+                        <button
+                          class="color-part rounded-circle me-1 mb-2"
+                          style="background-color: #ffd725"
+                        ></button>
+                        <button
+                          class="color-part rounded-circle me-1 mb-2"
+                          style="background-color: #19ff94"
+                        ></button>
+                        <button
+                          class="color-part rounded-circle me-1 mb-2"
+                          style="background-color: #242424"
+                        ></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer border-top-0 pt-0">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Cancel
+                    </button>
+                    <button type="button" class="btn btn-success">Save</button>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-5 mb-md-0"></div>
+            </div>
+          </div>
+          <h4>Currently Wearing</h4>
+          <div class="card card-body">
+            <div class="section d-flex gap-3 align-items-center">
+              <div class="bg-gray-500 rounded p-1">
+                <a href="#">
+                  <img
+                    src="img/market/place-2.png"
+                    width="70"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+              <div class="auto min-w-0">
+                <a
+                  href="#"
+                  class="d-block truncate text-xl text-light fw-semibold mb-1"
+                  >Crystalline Faberge Egg</a
+                >
+                <button class="btn btn-danger btn-sm px-3">Unwear</button>
+              </div>
+            </div>
+            <div class="section d-flex gap-3 align-items-center">
+              <div class="bg-gray-500 rounded p-1">
+                <a href="#">
+                  <img
+                    src="img/market/place-2.png"
+                    width="70"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+              <div class="auto min-w-0">
+                <a
+                  href="#"
+                  class="d-block truncate text-xl text-light fw-semibold mb-1"
+                  >Crystalline Faberge Egg</a
+                >
+                <button class="btn btn-danger btn-sm px-3">Unwear</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <h4 class="mb-2 lh-1">My Inventory</h4>
+          <ul class="nav nav-pills nav-rounded mb-1">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Hats</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Accessories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Faces</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shirts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">T-Shirts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pants</a>
+            </li>
+          </ul>
+          <div class="card card-body pb-5">
+            <div class="d-flex gap-4 justify-content-between mb-3">
+              <div class="text-3xl fw-semibold">Hats</div>
+              <div class="input-parent has-icon">
+                <i class="bi bi-search"></i>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search..."
+                />
+              </div>
+            </div>
+            <div class="row gy-4">
+              <div class="col-md-3 col-6">
+                <div class="bg-gray-500 rounded p-2 position-relative">
+                  <a href="#">
+                    <img
+                      src="img/market/place-2.png"
+                      class="img-fluid"
+                      data-bs-toggle="tooltip"
+                      title="Crystalline Faberge Egg"
+                    />
+                  </a>
+                  <button
+                    class="btn btn-success btn-sm position-absolute top-100 start-50 translate-middle px-3"
+                  >
+                    Wear
+                  </button>
+                </div>
+              </div>
+              <div class="col-md-3 col-6">
+                <div class="bg-gray-500 rounded p-2 position-relative">
+                  <a href="#">
+                    <img
+                      src="img/market/place-2.png"
+                      class="img-fluid"
+                      data-bs-toggle="tooltip"
+                      title="Crystalline Faberge Egg"
+                    />
+                  </a>
+                  <button
+                    class="btn btn-success btn-sm position-absolute top-100 start-50 translate-middle px-3"
+                  >
+                    Wear
+                  </button>
+                </div>
+              </div>
+              <div class="col-md-3 col-6">
+                <div class="bg-gray-500 rounded p-2 position-relative">
+                  <a href="#">
+                    <img
+                      src="img/market/place-2.png"
+                      class="img-fluid"
+                      data-bs-toggle="tooltip"
+                      title="Crystalline Faberge Egg"
+                    />
+                  </a>
+                  <button
+                    class="btn btn-success btn-sm position-absolute top-100 start-50 translate-middle px-3"
+                  >
+                    Wear
+                  </button>
+                </div>
+              </div>
+              <div class="col-md-3 col-6">
+                <div class="bg-gray-500 rounded p-2 position-relative">
+                  <a href="#">
+                    <img
+                      src="img/market/place-2.png"
+                      class="img-fluid"
+                      data-bs-toggle="tooltip"
+                      title="Crystalline Faberge Egg"
+                    />
+                  </a>
+                  <button
+                    class="btn btn-success btn-sm position-absolute top-100 start-50 translate-middle px-3"
+                  >
+                    Wear
+                  </button>
+                </div>
+              </div>
+              <div class="col-md-3 col-6">
+                <div class="bg-gray-500 rounded p-2 position-relative">
+                  <a href="#">
+                    <img
+                      src="img/market/place-2.png"
+                      class="img-fluid"
+                      data-bs-toggle="tooltip"
+                      title="Crystalline Faberge Egg"
+                    />
+                  </a>
+                  <button
+                    class="btn btn-success btn-sm position-absolute top-100 start-50 translate-middle px-3"
+                  >
+                    Wear
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END CONTENT -->
+
+    <!-- JS imports -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/custom.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Section Loaders-->
+    <script>
+      window.onload = function () {
+        $.get("!head.html", function (content) {
+          $("#head").html(content);
+        });
+        $.get("!nav.html", function (content) {
+          $("#navbar").html(content);
+        });
+        $.get("!nav-side.html", function (content) {
+          $("#nav-side").html(content);
+        });
+        $.get("!nav-mobile.html", function (content) {
+          $("#nav-mobile").html(content);
+        });
+      };
+    </script>
+  </body>
+</html>

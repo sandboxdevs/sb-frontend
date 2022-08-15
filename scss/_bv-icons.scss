@@ -1,0 +1,33 @@
+/*
+* Buildaverse Icons
+*/
+i.bv-icon::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+i.bv-icon.hard-hat::before {
+    background-image: url(../img/icons/hard-hat.svg);
+}
+
+i.bv-icon.shirt::before {
+    background-image: url(../img/icons/shirt.svg);
+}
+
+i.bv-icon.tools::before {
+    background-image: url(../img/icons/tools.svg);
+}
+
+i.bv-icon.laugh::before {
+    background-image: url(../img/icons/laugh.svg);
+}
+
+i.bv-icon.pants::before {
+    background-image: url(../img/icons/pants.svg);
+}
