@@ -1,87 +1,169 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <div id="head"></div>
+    <title>Sandbox |Settings</title>
+  </head>
 
-<head>
-	<div id="head"></div>
-	<title>Buildaverse |Settings</title>
-</head>
+  <body>
+    <!-- NAVIGATION START -->
+    <div id="navbar"></div>
+    <div id="nav-top"></div>
+    <div id="nav-side"></div>
+    <div id="nav-mobile"></div>
 
-<body>
-	<!-- NAVIGATION START -->
-	<div id="navbar"></div>
-	<div id="nav-top"></div>
-	<div id="nav-side"></div>
-	<div id="nav-mobile"></div>
+    <!-- Main Section -->
+    <div class="main-section container pb-5 pb-md-0">
+      <div class="row">
+        <h1 class="mb-4">Account Settings</h1>
+        <div class="d-flex align-items-start">
+          <div class="flex-column">
+            <div
+              class="nav nav-pills me-3 card p-3"
+              id="v-pills-tab"
+              role="tablist"
+              aria-orientation="vertical"
+            >
+              <button
+                class="nav-link active"
+                id="v-pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-home"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-home"
+                aria-selected="true"
+              >
+                General
+              </button>
+              <button
+                class="nav-link"
+                id="v-pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-profile"
+                aria-selected="false"
+              >
+                Privacy
+              </button>
+              <button
+                class="nav-link"
+                id="v-pills-messages-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-messages"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-messages"
+                aria-selected="false"
+              >
+                Security
+              </button>
+              <button
+                class="nav-link"
+                id="v-pills-settings-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-settings"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-settings"
+                aria-selected="false"
+              >
+                Connections
+              </button>
+            </div>
+            <div class="card me-3 mt-3 p-3 text-center text-small">
+              <h3><i class="bi bi-patch-question-fill"></i></h3>
+              Need help?
+              <a href="#">Support -></a>
+              <a href="#">FAQ -></a>
+            </div>
+          </div>
 
-	<!-- Main Section -->
-	<div class="main-section container pb-5 pb-md-0">
-		<div class="row">
-			<h1 class="mb-4">Account Settings</h1>
-			<div class="d-flex align-items-start">
+          <div class="tab-content card card-body" id="v-pills-tabContent">
+            <div
+              class="tab-pane show active"
+              id="v-pills-home"
+              role="tabpanel"
+              aria-labelledby="v-pills-home-tab"
+            >
+              <div class="float-right"><a href="#">Change</a></div>
+              <h5 class="mb-1">Username</h5>
+              <p class="mb-3">Your Username</p>
+              <div class="float-right"><a href="#">Edit</a></div>
+              <h5 class="mb-1">
+                Email
+                <span class="text-muted text-small">
+                  Not Verified. <a href="#">Resend?</a></span
+                >
+              </h5>
+              <p class="mb-3">email@example.com</p>
+              <div class="float-right">
+                <small class="text-muted">0/250</small>
+              </div>
+              <h5 class="mb-1">Description</h5>
+              <textarea
+                class="form-control"
+                id="textarea-example-1"
+                placeholder="User defined bio"
+                rows="3"
+              ></textarea>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="v-pills-profile"
+              role="tabpanel"
+              aria-labelledby="v-pills-profile-tab"
+            >
+              ...
+            </div>
+            <div
+              class="tab-pane fade"
+              id="v-pills-messages"
+              role="tabpanel"
+              aria-labelledby="v-pills-messages-tab"
+            >
+              ...
+            </div>
+            <div
+              class="tab-pane fade"
+              id="v-pills-settings"
+              role="tabpanel"
+              aria-labelledby="v-pills-settings-tab"
+            >
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-				<div class="flex-column">
-				<div class="nav nav-pills me-3 card p-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-					<button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
-						type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">General</button>
-					<button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
-						type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Privacy</button>
-					<button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
-						type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Security</button>
-					<button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings"
-						type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Connections</button>
-				</div>
-				<div class="card me-3 mt-3 p-3 text-center text-small">
-					<h3><i class="bi bi-patch-question-fill"></i></h3>
-					Need help?
-					<a href="#">Support -></a>
-					<a href="#">FAQ -></a>
+    <!-- JS imports -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/custom.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
 
-				</div>
-				</div>
-
-				<div class="tab-content card card-body" id="v-pills-tabContent">
-					<div class="tab-pane show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-							<div class="float-right"><a href="#">Change</a></div>
-							<h5 class="mb-1">Username</h5>
-							<p class="mb-3">Your Username</p>
-							<div class="float-right"><a href="#">Edit</a></div>
-							<h5 class="mb-1">Email <span class="text-muted text-small"> Not Verified. <a href="#">Resend?</a></span></h5>
-							<p class="mb-3">email@example.com</p>
-							<div class="float-right"><small class="text-muted">0/250</small></div>
-							<h5 class="mb-1">Description</h5>
-							<textarea class="form-control" id="textarea-example-1" placeholder="User defined bio" rows="3"></textarea>
-					</div>
-					<div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
-					<div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
-					<div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- JS imports -->
-	<script src="js/bootstrap.bundle.js"></script>
-	<script src="js/custom.js"></script>
-	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-		crossorigin="anonymous"></script>
-	
-	<!-- Section Loaders-->
-	<script>
-		window.onload = function () {
-			$.get("!head.html", function (content) {
-				$("#head").html(content);
-			});
-			$.get("!nav.html", function (content) {
-				$("#navbar").html(content);
-			});
-			$.get("!nav-side.html", function (content) {
-				$("#nav-side").html(content);
-			});
-			$.get("!nav-mobile.html", function (content) {
-				$("#nav-mobile").html(content);
-			});
-		};
-	</script>
-</body>
-
+    <!-- Section Loaders-->
+    <script>
+      window.onload = function () {
+        $.get("!head.html", function (content) {
+          $("#head").html(content);
+        });
+        $.get("!nav.html", function (content) {
+          $("#navbar").html(content);
+        });
+        $.get("!nav-side.html", function (content) {
+          $("#nav-side").html(content);
+        });
+        $.get("!nav-mobile.html", function (content) {
+          $("#nav-mobile").html(content);
+        });
+      };
+    </script>
+  </body>
 </html>
