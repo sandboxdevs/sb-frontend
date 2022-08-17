@@ -1,7 +1,8 @@
-# BV Frontend
+# Sandbox Frontend
 
 Developed by [tor](https://github.com/daniiltrpv) and [Nabrious](https://github.com/nabriouso).
-If you use this code, you must open source any changes to it.
+This code was made and belongs to 
+If you intend to use this code. Please read LICENSE.md at least three (3) times to understand what you can, and can't do with this source code.
 
 ## Modification
 
