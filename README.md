@@ -2,7 +2,7 @@
 
 Developed by [tor](https://github.com/daniiltrpv) and [Nabrious](https://github.com/nabriouso).
 
-If you intend to use this code. Please read LICENSE.md at least three (3) times to understand what you can, and can't do with this source code.
+If you intend to use this code. Please read LICENSE.md so you know what you can, and can't do with this source code.
 
 ## Modification
 
